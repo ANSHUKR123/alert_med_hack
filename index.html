@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
     <title>Document</title>
@@ -74,7 +75,18 @@
           <li><a class="dropdown-item active btn"  href="alert.html" >Anaesthesiology</a></li>
           <li><a class="dropdown-item" href="#">Dental</a></li>
           <li><a class="dropdown-item" href="#">Dermatology</a></li>
-          <li><a class="dropdown-item" href="#">Emergency</a></li>
+          <li>
+            <div class="sub-drop-down" id="drop">
+              <a class="dropdown-item"  href="#">Emergency</a> 
+              <i class="bi bi-caret-down-fill" id="test"></i>
+            </div>
+           
+            <ul class="dropdown-item-test" id="test2">
+              <li><a href="#">2nd Level #1</a></li>
+              <li><a href="#">2nd Level #2</a></li>
+              <li><a href="#">2nd Level #3</a></li>
+              </ul>
+          </li>
           <li><a class="dropdown-item" href="#">ENT</a></li>
           <li><a class="dropdown-item" href="#" >Medicine</a><ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">xyz</a></li>
@@ -218,9 +230,9 @@
     </div>
   </div>
 </footer>
-
+<script src="index.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-      <script src="index.js"></script>
+      
 
   </body>
 </html>
